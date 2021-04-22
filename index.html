@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--menu-->
+    <ul class="nav bg-dark justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link text-white active" href="#">Arte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Artistas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Conteúdo Extra</a>
+      </li>
+      <li class="nav-item text-white">
+        <a class="nav-link disabled" href="#">GALERIA DE ARTE</a>
+      </li>
+    </ul>
+    <!--/menu-->
+
+    <div class="container">
+      <!--CARROSEL-->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="assets/img/remedios-varo.jpeg"
+              alt="Primeiro Slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/botticelli.jpeg"
+              alt="Segundo Slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/vangogh.png"
+              alt="Terceiro Slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <!--/CARROSEL-->
+
+      <!--JUMBO-->
+      <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+          <h1 class="display-4">PINTURAS</h1>
+          <p class="lead">Isso é tudo pessoal.</p>
+        </div>
+      </div>
+      <!--/JUMBO-->
+
+      <!--cards-->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Semana de Arte</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                asperiores minus quis rem sapiente suscipit magni veritatis.
+                Nulla quasi voluptas quisquam vitae asperiores dignissimos
+                dolore fuga officia, et recusandae accusamus?.
+              </p>
+              <a href="#" class="btn btn-dark">Visitar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Novidades</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                quasi optio quibusdam ipsam suscipit minima asperiores cum
+                eveniet facere voluptatum mollitia odio, ullam autem pariatur
+                tenetur blanditiis modi ut nemo.
+              </p>
+              <a href="#" class="btn btn-dark">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-4">
+        <div class="card-header">Citação</div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>A arte existe para que a realidade não nos destrua.</p>
+            <footer class="blockquote-footer">Friedrich Nietzsche</footer>
+          </blockquote>
+        </div>
+      </div>
+      <!--/cards-->
+
+      <div class="d-flex justify-content-center mt-5">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/H51WegqRNLA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <form>
+        <div class="form-group mt-4">
+          <label for="exampleFormControlInput1">Endereço de email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <button type="button" class="btn btn-dark mt-4">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-4">
+      <!-- Grid container -->
+      <div class="container p-4">
+
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
